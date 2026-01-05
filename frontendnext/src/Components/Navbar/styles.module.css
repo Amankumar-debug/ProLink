@@ -1,0 +1,29 @@
+.container{
+    
+}
+
+.navbar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: rgb(240, 238, 238);
+    padding: 1rem;
+}
+
+.navbarOptionContainer{
+    display: flex;
+}
+
+.buttonJoin{
+    width: fit-content;
+    cursor: pointer;
+    font-size: .8rem;
+    padding-inline: 1.2rem;
+    font-weight: 400;
+    padding-block: .6rem;
+    border-radius: 20px;
+   margin-top: .8rem;
+   user-select: none;
+   transition: all .2s;
+    background: #e87171;
+}

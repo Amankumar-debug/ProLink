@@ -1,0 +1,93 @@
+POST http://localhost:8000/signup
+Content-Type: application/json
+
+{
+    "name":"Rahul",
+    "email":"rahul@gmail.com",
+    "password":"rahul1234",
+    "username":"Rahul@123"
+    }
+
+###
+
+POST http://localhost:8000/login
+Content-Type: application/json
+
+{
+    "email":"aman@gmail.com",
+    "password":"aman1234"
+}
+
+
+###
+POST http://localhost:8000/login
+Content-Type: application/json
+
+{
+    "email":"rahul@gmail.com",
+    "password":"rahul1234"
+}
+###
+  GET http://localhost:8000/get_user_and_profile
+    Content-Type: application/json
+
+    {
+        "token":"c4c8ba519f5c5de7d1ff8ffbbf2989e9780f60c98eb7599cf3e46beef51bf888"
+    }
+###
+POST http://localhost:8000/update_user_data
+Content-Type: application/json
+
+{
+    "token":"0d1de96ab80ffb409efbc16b6c1c9c82cae7ed689f8923ff28827d71c384bdf4",
+    "bio":"Hello, I am Aman Bansal, CTO at TechCorp. With a strong background in software development and a passion for innovation, I lead our tech team to create cutting-edge solutions. My expertise spans across various technologies, and I am committed to driving our company's success through strategic technological advancements.",
+    "currentPost":"CTO",
+    "pastWork":[
+        {
+            "company":"Google",
+            "position":"SDE",
+            "years":"2"
+        }
+    ],
+    "education":[
+        {
+            "school":"GCMT",
+            "degree":"B.Tech",
+            "fieldOfStudy":"CSE"
+        }
+    ]
+}
+
+###
+GET http://localhost:8000/get_all_user_profiles
+Content-type:application/json
+
+
+###
+POST  http://localhost:8000/user/send_connection_request
+Content-Type: application/json
+
+{
+    "token":"6de3da02850fbe4fd2783847f621074b79cb814e86959fd5e61a62d18733d38a",
+    "connectionId":"694e77a610673344c1db3c0a"
+}
+
+###
+GET http://localhost:8000/user/get_connection_requests
+Content-Type: application/json
+
+{
+    "token":"6de3da02850fbe4fd2783847f621074b79cb814e86959fd5e61a62d18733d38a"      
+}
+
+###
+GET http://localhost:8000/user/user_connection_request
+Content-Type: application/json
+
+{   
+    "token":"6de3da02850fbe4fd2783847f621074b79cb814e86959fd5e61a62d18733d38a"
+}
+
+###
+
+GET http://localhost:8000/posts
