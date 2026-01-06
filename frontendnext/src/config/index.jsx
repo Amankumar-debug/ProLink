@@ -2,8 +2,8 @@ import axios from "axios";
 
   
 
-export const BASE_URL="http://localhost:8000";
+export const BASE_URL="https://prolink-m84s.onrender.com";
 
 export const client=axios.create({
-    baseURL:"http://localhost:8000",
+    baseURL:"https://prolink-m84s.onrender.com",
 })
