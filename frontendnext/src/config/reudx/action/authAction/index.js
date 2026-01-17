@@ -154,7 +154,8 @@ export const acceptConnection=createAsyncThunk(
                 requestId:user.user_id,
                 action_type:user.action
             })
-            
+                        thunkAPI.dispatch(getConnectionRequest({token:user.token}));
+            thunkAPI.dispatch(getMyConnectionRequests({token:user.token}));
             return thunkAPI.fulfillWithValue(response.data);
         } catch (error) {
             return thunkAPI.rejectWithValue(error.response.data);

@@ -27,7 +27,9 @@ export default function Navbar() {
         <div style={{display:"flex", gap:"1.2rem"}}>
           <p>Hey, {authState.user.userId.username}</p>
           
-          <p style={{cursor:"pointer",fontWeight:"bold"}}>Profile</p>
+          <p style={{cursor:"pointer",fontWeight:"bold"}} onClick={()=>{
+            router.push("/profile");
+          }}>Profile</p>
           <p onClick={()=>{
             localStorage.removeItem("token")
             dispatch(reset())
