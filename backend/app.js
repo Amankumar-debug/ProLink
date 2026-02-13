@@ -5,6 +5,8 @@ import mongoose from "mongoose";
 import cors from "cors";
 import userRoute from "./routes/userRoute.js";
 import postRoute from "./routes/post.routes.js";
+import resumeRoute from "./routes/resume.js";
+import chatRouts from "./routes/chats.js"
 import { link } from "node:fs";
 
 const mongodb_url=process.env.MONGO_URL;
@@ -18,6 +20,8 @@ app.use(express.urlencoded({limit:"40kb",extended:true}));
 
 app.use(userRoute);
 app.use(postRoute);
+app.use("/api/resume", resumeRoute);
+app.use("/api/chat",chatRouts)
 
 app.get("/",(req,res)=>{
     res.send("home");

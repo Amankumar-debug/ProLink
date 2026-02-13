@@ -1,0 +1,97 @@
+.container {
+  padding: 30px;
+  display: flex;
+  justify-content: center;
+}
+
+.card {
+  width: 100%;
+  max-width: 850px;
+  background: rgb(254, 254, 254);
+  border-radius: 16px;
+  padding: 32px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.06);
+  border: 1px solid #f1f1f1;
+}
+
+.title {
+  font-size: 24px;
+  font-weight: 600;
+  margin-bottom: 20px;
+  color: #111827;
+}
+
+.uploadBox {
+  display: inline-block;
+  padding: 12px 18px;
+  border-radius: 8px;
+  background: #648eea;
+  color: white;
+  cursor: pointer;
+  font-weight: 500;
+  margin-bottom: 20px;
+  transition: 0.3s;
+}
+
+.uploadBox:hover {
+  background: #1d4ed8;
+}
+
+.uploadBox input {
+  display: none;
+}
+
+.loading {
+  margin-top: 15px;
+  color: #648eea;
+  font-weight: 500;
+}
+
+.feedbackCard {
+  margin-top: 25px;
+  padding: 25px;
+  border-radius: 12px;
+  background: #f9fafb;
+  line-height: 1.7;
+  font-size: 15px;
+  color: #374151;
+}
+
+.feedbackTitle {
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 15px;
+  color: #111827;
+}
+
+/* Markdown Styling */
+
+.markdown h2 {
+  font-size: 18px;
+  margin-top: 20px;
+  margin-bottom: 10px;
+  color: #111827;
+}
+
+.markdown h3 {
+  font-size: 16px;
+  margin-top: 18px;
+  margin-bottom: 8px;
+}
+
+.markdown p {
+  margin-bottom: 10px;
+}
+
+.markdown ul {
+  padding-left: 18px;
+  margin-bottom: 12px;
+}
+
+.markdown li {
+  margin-bottom: 6px;
+}
+
+.markdown strong {
+  color: #111827;
+}
